@@ -35,75 +35,88 @@
 <body>
 
     <!-- Topbar Start -->
-<div id="home" class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
-    <div class="row gx-0 justify-content-end">
-        <div class="col-md-6 text-end">
-            <div class="position-relative d-inline-flex align-items-center bg-success text-white top-shape px-5">
-                <div class="py-2">
-                    <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+56 9 9107 9568</p>
+    <div id="home" class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block telefono">
+        <div class="row gx-0 justify-content-center telefono-fondo">
+            <div class="col-md-6 text-end">
+                <div class="position-relative d-inline-flex align-items-center text-white px-5">
+                    <div class="py-2">
+                        <p class="m-0 telefono-1"><span class="telefono-mensaje">Estamos atentos a tu llamada &nbsp;</span><i class="fa fa-phone-alt me-2"></i>&nbsp;+56 9 9107 9568</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Topbar End -->
+    <!-- Topbar End -->
 
 
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-success"><img class="logo" src="/img/tiger.svg" alt=""><p class="marca">Fumigaciones Providencia</p></h1>
+            <h1 class="m-0 text-uppercase text-primary">
+                <img class="mt-3 logo" src="img/gato.png" alt="">
+                <p class="marca">Fumigaciones Providencia</p>
+            </h1>
         </a>
-        <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse menus" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 me-n3">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#servicios" class="nav-item nav-link">Servicios</a>
-                <a href="#cotizacion" class="nav-item nav-link">Cotización</a>
-                <!-- <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Quote Form</a>
-                        <a href="team.html" class="dropdown-item">The Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div> -->
-                <a href="#clientes" class="nav-item nav-link">Equipo</a>
+                <a href="#inicio" class="nav-item nav-link active menus-a">Inicio</a>
+                <a href="#servicios" class="nav-item nav-link menus-a">Servicios</a>
+                <a href="#cotizacion" class="nav-item nav-link menus-a">Cotización</a>
+                <!--
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <div class="dropdown-menu m-0">
+                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                    <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                    <a href="feature.html" class="dropdown-item">Features</a>
+                    <a href="quote.html" class="dropdown-item">Quote Form</a>
+                    <a href="team.html" class="dropdown-item">The Team</a>
+                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                </div>
+            </div>
+            -->
+                <a href="#equipo" class="nav-item nav-link menus-a">Equipo</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
+
     <!-- Carousel Start -->
-    <div class="container-fluid p-0">
+    <div id="inicio" class="container-fluid p-0 carrusel">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <video src="/video/halcon.mp4" autoplay loop muted playsinline></video>
+                    <video src="video/gato1.mp4" autoplay loop muted playsinline class="video"></video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Control de Plagas</h5>
-                            <h1 class="display-1 text-white mb-md-4">Vigilancia precisa, control sin huella.</h1>
-                            <a href="#cotizacion" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Cotiza con nosotros</a>
-                            <a href="tel:+56991079568" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contáctanos</a>
+                            <h1 class="display-1 text-white mb-md-4 slogan">Olfato felino, precisión <br>letal contra
+                                las plagas.
+                            </h1>
+                            <a href="#cotizacion"
+                                class="btn py-md-3 px-md-5 me-3 rounded-pill carrusel-btn-1 mt-3">Cotiza con
+                                nosotros</a>
+                            <a href="tel:+56991079568"
+                                class="btn py-md-3 px-md-5 rounded-pill carrusel-btn-2 mt-3">Contáctanos</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <video src="/video/cernicalo.mp4" autoplay loop muted playsinline></video>
+                    <video src="video/gato2.mp4" autoplay loop muted playsinline class="video"></video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Control de Plagas</h5>
-                            <h1 class="display-1 text-white mb-md-4">Donde vuela el halcón, no hay plagas.</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Cotiza con nosotros</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contáctanos</a>
+                            <h1 class="display-1 text-white mb-md-4 slogan">Tus plagas no tienen <br>siete vidas.</h1>
+                            <a href="" class="btn py-md-3 px-md-5 me-3 rounded-pill carrusel-btn-1 mt-3">Cotiza con
+                                nosotros</a>
+                            <a href="" class="btn py-md-3 px-md-5 rounded-pill carrusel-btn-2  mt-3">Contáctanos</a>
                         </div>
                     </div>
                 </div>
@@ -120,28 +133,133 @@
     </div>
     <!-- Carousel End -->
 
+    <!-- Services Start -->
 
+    <div id="servicios" class="container-fluid pt-6 px-3 servicios-fondo">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Nuestros Servicios</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <!-- SANITIZACIÓN -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-spray-can fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Sanitización Profesional</h3>
+                    <p class="mb-0">Realizamos la desinfección integral de espacios, eliminando virus, bacterias y
+                        hongos, para garantizar ambientes saludables y seguros.</p>
+                </div>
+            </div>
+            <!-- DESRATIZACIÓN -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <img class="raton" src="img/plague.svg" alt="Control de roedores" title="Control de roedores" />
+                    </div>
+                    <h3 class="mb-3">Control y Eliminación de Roedores</h3>
+                    <p class="mb-0">Implementamos métodos seguros y efectivos para la erradicación de ratas y ratones,
+                        protegiendo su entorno y salud.</p>
+                </div>
+            </div>
+            <!-- DESINSECTACIÓN -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-bug fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Desinsectación Integral</h3>
+                    <p class="mb-0">Eliminamos de forma eficiente insectos rastreros y voladores, asegurando ambientes
+                        libres de plagas y riesgos asociados.</p>
+                </div>
+            </div>
+            <!-- CONTROL DE PALOMAS -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-dove fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Control Efectivo de Palomas</h3>
+                    <p class="mb-0">Desarrollamos soluciones especializadas para disuadir la presencia de palomas y
+                        prevenir daños estructurales y sanitarios.</p>
+                </div>
+            </div>
+            <!-- INSTALACIÓN DE PINCHOS PARA AVES -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-thumbtack fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Instalación de Barreras Antipájaros</h3>
+                    <p class="mb-0">Implementamos barreras físicas estratégicas para impedir la presencia y anidación de
+                        aves en techos y cornisas.</p>
+                </div>
+            </div>
+            <!-- CONTROL DE MURCIÉLAGOS -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <img class="murcielago" src="img/bat-vector-svgrepo-com.svg" alt="Control de murciélagos"
+                            title="Control de murciélagos" />
+                    </div>
+                    <h3 class="mb-3">Manejo Responsable de Murciélagos</h3>
+                    <p class="mb-0">Aplicamos técnicas especializadas para el control y desplazamiento seguro de
+                        murciélagos, respetando su conservación.</p>
+                </div>
+            </div>
+            <!-- TRAMPAS ULTRAVIOLETA -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-lightbulb fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Instalación de Trampas Ultravioleta</h3>
+                    <p class="mb-0">Proveemos e instalamos trampas UV diseñadas para atraer y capturar insectos
+                        voladores, garantizando un control higiénico y eficiente.</p>
+                </div>
+            </div>
+            <!-- ASESORÍAS -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4 servicio"
+                        style="width: 90px; height: 90px;">
+                        <i class="fa fa-user-check fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3">Asesoría Técnica Especializada</h3>
+                    <p class="mb-0">Ofrecemos orientación profesional integral para la prevención y control efectivo de
+                        plagas en diversos entornos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
 
     <!-- About Start -->
-    <div class="container-fluid bg-success p-0">
+    <div class="container-fluid bg-secondary p-0">
         <div class="row g-0">
             <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">Bienvenidos a <span class="text-secondary">Fumigaciones Providencia</span></h1>
-                <h4 class="text-primary mb-4">En Fumigaciones Providencia protegemos tu hogar, negocio y familia de plagas
-                    indeseadas, con métodos efectivos, rápidos y respetuosos con el medio ambiente. Tu tranquilidad es
-                    nuestra prioridad.</p>
+                <h1 class="display-5 mb-4"><span class="about-titulo">Fumigaciones Providencia</span></h1>
+                <h4 class="mb-4">¿Plagas invadiendo tu espacio? En Fumigaciones Providencia actuamos rápido
+                    y de forma segura, eliminando toda amenaza con métodos ecológicos que garantizan la protección de tu
+                    familia y patrimonio.</p>
                 </h4>
-                <p class="mb-4">Con años de experiencia y un equipo de expertos certificados, ofrecemos fumigaciones
-                    seguras para eliminar insectos, roedores y otras amenazas que ponen en riesgo tu salud y tu
-                    patrimonio. Utilizamos tecnología de vanguardia y productos de baja toxicidad, garantizando
-                    resultados duraderos y supervisión constante. No dejes que una plaga crezca en silencio: confía en
-                    nosotros para recuperar la limpieza y seguridad de tus espacios. Solicita hoy tu presupuesto sin
-                    costo y comprueba por qué cientos de clientes confían en Fumigaciones Providencia.
+                <p class="mb-4">Las plagas no esperan y tampoco deberías hacerlo tú. En Fumigaciones Providencia, con
+                    años de experiencia y expertos certificados, eliminamos insectos y roedores con tecnología avanzada
+                    y productos seguros. Protege tu salud y patrimonio ahora. Solicita tu presupuesto gratis y únete a
+                    cientos que ya confían en nosotros para mantener sus espacios limpios y seguros.
                 </p>
-                <a class="btn btn-primary py-md-3 px-md-5 rounded-pill">Cotiza con nosotros</a>
+                <a class="btn py-md-3 px-md-5 rounded-pill about-btn" href="#cotizacion">Cotiza con nosotros</a>
             </div>
             <div class="col-lg-6">
-                <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
+                <div class="h-100 d-flex flex-column justify-content-center p-5 about-fondo">
                     <!-- Servicio: Casas -->
                     <div class="d-flex text-white mb-5">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4"
@@ -149,9 +267,9 @@
                             <i class="fa fa-home fs-4"></i>
                         </div>
                         <div class="ps-4">
-                            <h3>Fumigación de Casas</h3>
-                            <p class="mb-0">Protegemos tu hogar de insectos y roedores con tratamientos seguros y
-                                efectivos. Vive tranquilo, sin plagas.</p>
+                            <h3>Control de Plagas para Casas</h3>
+                            <p class="mb-0">Cuidamos tu hogar con tratamientos confiables y ecológicos para mantenerlo
+                                libre de insectos y roedores. Vive seguro y en paz.</p>
                         </div>
                     </div>
                     <!-- Servicio: Tiendas -->
@@ -161,9 +279,9 @@
                             <i class="fa fa-store fs-4"></i>
                         </div>
                         <div class="ps-4">
-                            <h3>Fumigación de Tiendas</h3>
-                            <p class="mb-0">Cuidamos tu negocio y tus productos, eliminando plagas que afectan tu
-                                inventario y reputación.</p>
+                            <h3>Protección Antiplagas para Tiendas</h3>
+                            <p class="mb-0">Mantenemos tu negocio y mercancía protegidos, eliminando cualquier amenaza
+                                que pueda dañar tu inventario o imagen.</p>
                         </div>
                     </div>
                     <!-- Servicio: Restaurantes -->
@@ -173,11 +291,12 @@
                             <i class="fa fa-utensils fs-4"></i>
                         </div>
                         <div class="ps-4">
-                            <h3>Fumigación de Restaurantes</h3>
-                            <p class="mb-0">Garantizamos ambientes limpios y libres de plagas para la seguridad de tus
-                                clientes y la inocuidad de tus alimentos.</p>
+                            <h3>Fumigación Profesional para Restaurantes</h3>
+                            <p class="mb-0">Aseguramos un entorno limpio y libre de plagas, cuidando la salud de tus
+                                clientes y la calidad de tus alimentos.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -185,206 +304,11 @@
     </div>
     <!-- About End -->
 
-
-    <!-- Services Start -->
-     
-    <div id="servicios" class="container-fluid pt-6 px-5">
-        <div  class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Qué Ofrecemos</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <!-- SANITIZACIÓN -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-spray-can fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Sanitización</h3>
-                    <p class="mb-0">Desinfectamos espacios para eliminar virus, bacterias y hongos, protegiendo la salud
-                        de todos.</p>
-                </div>
-            </div>
-            <!-- DESRATIZACIÓN -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <img class="raton" src="/img/plague.svg" alt="" title="" />
-                    </div>
-                    <h3 class="mb-3">Desratización</h3>
-                    <p class="mb-0">Control y eliminación de ratas y ratones mediante métodos seguros y efectivos.</p>
-                </div>
-            </div>
-            <!-- DESINSECTACIÓN -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-bug fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Desinsectación</h3>
-                    <p class="mb-0">Eliminamos insectos rastreros y voladores, garantizando ambientes libres de plagas.
-                    </p>
-                </div>
-            </div>
-            <!-- CONTROL DE PALOMAS -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-dove fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Control de Palomas</h3>
-                    <p class="mb-0">Implementamos soluciones efectivas para alejar palomas y evitar daños y
-                        contaminación.</p>
-                </div>
-            </div>
-            <!-- INSTALACIÓN DE PINCHOS PARA AVES -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-thumbtack fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Instalación de Pinchos</h3>
-                    <p class="mb-0">Colocamos barreras físicas para prevenir que aves se posen en techos y cornisas.</p>
-                </div>
-            </div>
-            <!-- CONTROL DE MURCIÉLAGOS -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <img class="murcielago" src="/img/bat-vector-svgrepo-com.svg" alt="" title="" />
-                    </div>
-                    <h3 class="mb-3">Control de Murciélagos</h3>
-                    <p class="mb-0">Aplicamos técnicas responsables para ahuyentar murciélagos sin dañarlos.</p>
-                </div>
-            </div>
-            <!-- TRAMPAS ULTRAVIOLETA -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-lightbulb fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Trampas Ultravioleta</h3>
-                    <p class="mb-0">Instalamos trampas UV para atraer y capturar insectos voladores de forma higiénica.
-                    </p>
-                </div>
-            </div>
-            <!-- ASESORÍAS -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-item bg-secondary text-center px-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4"
-                        style="width: 90px; height: 90px;">
-                        <i class="fa fa-user-check fa-2x"></i>
-                    </div>
-                    <h3 class="mb-3">Asesorías</h3>
-                    <p class="mb-0">Brindamos orientación profesional para prevenir y controlar plagas de forma
-                        integral.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services End -->
-
-
-
-    <!-- Features Start -->
-    <div class="container-fluid py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">¿Por Qué Elegirnos?</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <!-- Columna Izquierda -->
-            <div class="col-lg-4">
-                <div class="row g-5">
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-shield-alt fs-4 text-white"></i>
-                        </div>
-                        <h3>Protección Garantizada</h3>
-                        <p class="mb-0">Aseguramos la eliminación total de plagas con métodos certificados y garantía de
-                            servicio.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-recycle fs-4 text-white"></i>
-                        </div>
-                        <h3>Productos Ecológicos</h3>
-                        <p class="mb-0">Utilizamos productos de bajo impacto ambiental, seguros para tu familia y
-                            mascotas.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-thumbs-up fs-4 text-white"></i>
-                        </div>
-                        <h3>Experiencia Comprobada</h3>
-                        <p class="mb-0">Contamos con años de trayectoria y cientos de clientes satisfechos en la región.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagen Central -->
-            <div class="col-lg-4">
-                <div class="d-block bg-primary h-100 text-center">
-                    <img class="img-fluid" src="img/gente.jpg" alt="Fumigaciones La Granja">
-                    <div class="p-4">
-                        <p class="text-white mb-4">En Fumigaciones Providencia combinamos tecnología, experiencia y
-                            compromiso para proteger tus espacios y mantenerlos libres de plagas todo el año.</p>
-                        <a href="#cotizacion" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Contáctanos</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Columna Derecha -->
-            <div class="col-lg-4">
-                <div class="row g-5">
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="far fa-smile-beam fs-4 text-white"></i>
-                        </div>
-                        <h3>Clientes Felices</h3>
-                        <p class="mb-0">Nos recomiendan por nuestra atención cercana, puntualidad y resultados
-                            efectivos.</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-check fs-4 text-white"></i>
-                        </div>
-                        <h3>Asesoría Profesional</h3>
-                        <p class="mb-0">Ofrecemos diagnóstico preciso y plan de acción personalizado para cada cliente.
-                        </p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-headset fs-4 text-white"></i>
-                        </div>
-                        <h3>Atención 24/7</h3>
-                        <p class="mb-0">Estamos disponibles todo el año para emergencias y consultas sin costo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Features End -->
-
-
-
     <!-- Quote Start -->
-    <div id="cotizacion" class="container-fluid bg-secondary px-0">
+    <div id="cotizacion" class="container-fluid px-0 quote">
         <div class="row g-0">
             <!-- Formulario -->
-            <div class="col-lg-6 py-6 px-5">
+            <div class="col-lg-6 pt-6 pb-3 px-4">
                 <h1 class="display-5 mb-4">Solicita tu Cotización Gratis</h1>
                 <p class="mb-4">
                     ¿Problemas con plagas? En Fumigaciones La Granja te ofrecemos una evaluación gratuita y soluciones
@@ -396,16 +320,25 @@
                         <!-- Nombre -->
                         <div class="col-6">
                             <div class="form-floating mb-3">
-                                <input type="text" name="nombre" class="form-control" id="form-floating-1" placeholder="Juan Pérez">
+                                <input type="text" name="nombre" class="form-control" id="form-floating-1">
                                 <label for="form-floating-1">Nombre</label>
                             </div>
                         </div>
                         <!-- Email -->
                         <div class="col-6">
                             <div class="form-floating mb-3">
-                                <input type="email" name="email" class="form-control" id="form-floating-2"
-                                    placeholder="correo@ejemplo.com">
+                                <input type="email" name="email" class="form-control" id="form-floating-2">
                                 <label for="form-floating-2">Email</label>
+                            </div>
+                        </div>
+                        <!-- Area -->
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" name="mensaje" id="form-floating-2"
+                                        style="height: 100px;"></textarea>
+                                    <label for="form-floating-2">Mensaje</label>
+                                </div>
                             </div>
                         </div>
                         <!-- Selección de Servicio -->
@@ -425,9 +358,12 @@
                                 <label for="floatingSelect">Servicio</label>
                             </div>
                         </div>
+
+
+
                         <!-- Botón -->
                         <div class="col-6">
-                            <button class="btn btn-primary w-100 h-100" type="submit">Solicitar Cotización</button>
+                            <button class="btn w-100 h-100 quote-btn" type="submit">Solicitar Cotización</button>
                         </div>
                     </div>
                 </form>
@@ -435,8 +371,7 @@
             <!-- Imagen -->
             <div class="col-lg-6" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/cotizacion.jpg"
-                        alt="Cotización Fumigaciones La Granja" style="object-fit: cover;">
+                    <video src="video/cotizacion.mp4" autoplay loop muted playsinline class="video"></video>
                 </div>
             </div>
         </div>
@@ -455,7 +390,7 @@
             <div class="col-lg-4">
                 <div class="team-item position-relative overflow-hidden">
                     <img class="img-fluid w-100" src="img/equipo1.jpg" alt="Carlos Méndez">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                    <div class="team-text w-100 position-absolute top-50 text-center p-4 team-label">
                         <h3 class="text-white">Carlos Méndez</h3>
                         <p class="text-white text-uppercase mb-0">CEO</p>
                     </div>
@@ -464,7 +399,7 @@
             <div class="col-lg-4">
                 <div class="team-item position-relative overflow-hidden">
                     <img class="img-fluid w-100" src="img/equipo2.jpg" alt="María Fernández">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                    <div class="team-text w-100 position-absolute top-50 text-center p-4 team-label">
                         <h3 class="text-white">Mario Fernández</h3>
                         <p class="text-white text-uppercase mb-0">Especialista en Control de Plagas</p>
                     </div>
@@ -473,7 +408,7 @@
             <div class="col-lg-4">
                 <div class="team-item position-relative overflow-hidden">
                     <img class="img-fluid w-100" src="img/equipo3.jpg" alt="Jorge Castillo">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                    <div class="team-text w-100 position-absolute top-50 text-center p-4 team-label">
                         <h3 class="text-white">Cecilia Bahamondes</h3>
                         <p class="text-white text-uppercase mb-0">Gerenta Comercial</p>
                     </div>
@@ -483,59 +418,147 @@
     </div>
     <!-- Team End -->
 
+    <!-- Features Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">¿Por Qué Escogernos?</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <!-- Columna Izquierda -->
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3 features-icono"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-shield-alt fs-4 text-white"></i>
+                        </div>
+                        <h3>Protección Certificada</h3>
+                        <p class="mb-0">Garantizamos la erradicación completa de plagas mediante procedimientos
+                            certificados y compromiso con la calidad del servicio.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3 features-icono"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-recycle fs-4 text-white"></i>
+                        </div>
+                        <h3>Compromiso Ambiental</h3>
+                        <p class="mb-0">Empleamos productos con bajo impacto ambiental, asegurando la protección de su
+                            familia, mascotas y entorno natural.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3 features-icono"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-thumbs-up fs-4 text-white"></i>
+                        </div>
+                        <h3>Trayectoria Reconocida</h3>
+                        <p class="mb-0">Contamos con amplia experiencia y la confianza de cientos de clientes
+                            satisfechos en la región.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen Central -->
+            <div class="col-lg-4">
+                <div class="d-block h-100 text-center features-imagen">
+                    <video src="video/gato4.mp4" autoplay loop muted playsinline class="video"></video>
+                    <div class="p-4">
+                        <p class="text-white mb-4">En Fumigaciones Providencia combinamos tecnología avanzada,
+                            conocimiento experto y compromiso total para garantizar espacios libres de plagas durante
+                            todo el año.</p>
+                        <a href="#cotizacion" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2 features-btn">Solicita tu cotización gratis</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna Derecha -->
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3 features-icono"
+                            style="width: 60px; height: 60px;">
+                            <i class="far fa-smile-beam fs-4 text-white"></i>
+                        </div>
+                        <h3>Clientes Satisfechos</h3>
+                        <p class="mb-0">Somos reconocidos por nuestra atención personalizada, puntualidad y resultados
+                            comprobados.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3 features-icono"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-user-check fs-4 text-white"></i>
+                        </div>
+                        <h3>Asesoría Técnica Especializada</h3>
+                        <p class="mb-0">Ofrecemos diagnósticos precisos y planes de acción personalizados adaptados a
+                            las necesidades específicas de cada cliente.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3 features-icono"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-headset fs-4 text-white"></i>
+                        </div>
+                        <h3>Atención Continua 24/7</h3>
+                        <p class="mb-0">Estamos disponibles durante todo el año para atender emergencias y consultas,
+                            sin costo adicional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
 
-
-    <!-- Testimonial Start -->
+    <!-- Inicio Sección de Opiniones de Clientes -->
     <div id="" class="container-fluid bg-secondary p-0">
         <div class="row g-0">
             <div class="col-lg-6" style="min-height: 500px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/testimonial.jpg" alt="Clientes satisfechos"
+                    <img class="position-absolute w-100 h-100" src="img/comentarios.jpg" alt="Clientes satisfechos"
                         style="object-fit: cover;">
                 </div>
             </div>
             <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">Lo que dicen nuestros clientes</h1>
+                <h1 class="display-5 mb-4">Testimonios</h1>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item">
                         <p class="fs-4 fw-normal mb-4">
                             <i class="fa fa-quote-left text-primary me-3"></i>
-                            “Excelente servicio, rápido y efectivo. En poco tiempo desaparecieron las plagas de mi casa.
-                            Recomiendo 100% Fumigaciones La Granja.”
+                            “Desde la primera visita noté la diferencia: un servicio profesional, rápido y resultados
+                            visibles en días. Mi casa está finalmente libre de plagas, y siento la tranquilidad que
+                            necesitaba. ¡Recomiendo sin duda alguna!”
                         </p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="img/cliente8.png" alt="María López">
+                            <img class="img-fluid rounded-circle" src="img/cliente8.png" alt="Ana Vargas">
                             <div class="ps-4">
-                                <h3>María López</h3>
-                                <span class="text-uppercase">Propietaria de vivienda</span>
+                                <h3>Ana Vargas</h3>
+                                <span class="text-uppercase">Dueña de casa</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item">
                         <p class="fs-4 fw-normal mb-4">
                             <i class="fa fa-quote-left text-primary me-3"></i>
-                            “Muy profesionales y atentos. La asesoría fue clara y el control de plagas en mi restaurante
-                            fue impecable. Totalmente recomendados.”
+                            “La asesoría personalizada me ayudó a entender el problema a fondo. Además, usaron productos
+                            ecológicos que cuidaron a mi familia y mascotas. La efectividad del tratamiento superó mis
+                            expectativas, volvería a contratar sin pensarlo.”
                         </p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="img/cliente5.png" alt="Pedro González">
+                            <img class="img-fluid rounded-circle" src="img/cliente5.png" alt="Javier Morales">
                             <div class="ps-4">
-                                <h3>Pedro González</h3>
-                                <span class="text-uppercase">Dueño de restaurante</span>
+                                <h3>Javier Morales</h3>
+                                <span class="text-uppercase">Dueño de casa</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item">
                         <p class="fs-4 fw-normal mb-4">
                             <i class="fa fa-quote-left text-primary me-3"></i>
-                            “Servicio impecable y productos ecológicos que me dieron confianza para usar en mi negocio.
-                            Gracias a Fumigaciones La Granja, mantengo mi local libre de plagas.”
+                            “Como dueña de un negocio, la limpieza y seguridad son clave. Fumigaciones Providencia
+                            cumplió con creces: profesionales, puntuales y con resultados duraderos. Gracias a ellos,
+                            mis clientes notan la diferencia y yo tengo la tranquilidad que buscaba.”
                         </p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="img/cliente1.png" alt="Claudia Rojas">
+                            <img class="img-fluid rounded-circle" src="img/cliente1.png" alt="Lorena Castillo">
                             <div class="ps-4">
-                                <h3>Claudia Rojas</h3>
-                                <span class="text-uppercase">Comerciante local</span>
+                                <h3>Lorena Castillo</h3>
+                                <span class="text-uppercase">Comerciante Ferretera</span>
                             </div>
                         </div>
                     </div>
@@ -543,8 +566,7 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
-
+    <!-- Fin Sección de Opiniones de Clientes -->
 
 
     <!-- Blog Start --
@@ -642,47 +664,53 @@
             </div>
         </div>
     </div> -->
-    <div class="container-fluid bg-dark text-secondary p-5">
-    <div class="d-flex flex-wrap justify-content-center align-items-start gap-5 gap-lg-5">
+    <div class="container-fluid text-secondary p-5 footer">
+        <div class="d-flex flex-wrap justify-content-center align-items-start gap-5 gap-lg-5">
 
-        <!-- Enlaces Rápidos -->
-        <div class="text-start footer-parte">
-            <h3 class="text-white mb-4">Enlaces Rápidos</h3>
-            <div class="d-flex flex-column">
-                <a class="text-secondary mb-2" href="#home"><i class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
-                <a class="text-secondary mb-2" href="#servicios"><i class="bi bi-arrow-right text-primary me-2"></i>Servicios</a>
-                <a class="text-secondary mb-2" href="#cotizacion"><i class="bi bi-arrow-right text-primary me-2"></i>Cotización</a>
-                <a class="text-secondary" href="#equipo"><i class="bi bi-arrow-right text-primary me-2"></i>Equipo</a>
+            <!-- Enlaces Rápidos -->
+            <div class="text-start footer-parte">
+                <h3 class="text-white mb-4">Enlaces Rápidos</h3>
+                <div class="d-flex flex-column">
+                    <a class="text-secondary mb-2" href="#inicio"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>Inicio</a>
+                    <a class="text-secondary mb-2" href="#servicios"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>Servicios</a>
+                    <a class="text-secondary mb-2" href="#cotizacion"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>Cotización</a>
+                    <a class="text-secondary" href="#equipo"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>Equipo</a>
+                </div>
             </div>
-        </div>
 
-        <!-- Contacto -->
-        <div class="text-start footer-parte">
-            <h3 class="text-white mb-4">Contáctanos</h3>
-            <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>contacto@fumigacioneslagranja.cl</p>
-            <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+56 9 9107 9568</p>
-        </div>
+            <!-- Contacto -->
+            <div class="text-start footer-parte">
+                <h3 class="text-white mb-4">Contáctanos</h3>
 
-        <!-- Logo -->
-        <!-- <div class="footer-parte">
+                <p class="mb-0 footer-telefono"><i class="bi bi-telephone text-primary me-2 footer-telefono"></i><a href="+56991079568">+56 9 9107 9568</a></p>
+            </div>
+
+            <!-- Logo -->
+            <!-- <div class="footer-parte">
             <img class="logo-2" src="/img/logo.svg" alt="Logo" style="max-width: 200px;">
         </div> -->
 
+        </div>
     </div>
-</div>
 
-<div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5"
-    style="border-color: rgba(256, 256, 256, .1) !important;">
-    <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Fumigaciones Ñuñoa</a>. Todos los derechos reservados.
-        Desarrollado por <a class="text-secondary border-bottom" href="https://cianware.com"><img src="/img/cianwareW.svg" alt=""></a></p>
-</div>
+    <div class="container-fluid bg-dark text-secondary text-center py-5 px-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Fumigaciones Providencia</a>. Todos los
+            derechos reservados.
+            Desarrollado por <a class="text-secondary cianware" href="https://cianware.com"><img
+                    src="img/cianwareW.svg" alt="" class="cianware"></a></p>
+    </div>
 
 
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a> -->
 
 
     <!-- JavaScript Libraries -->

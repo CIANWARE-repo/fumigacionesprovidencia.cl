@@ -1,9 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #2F855A;    /* Verde bosque (verde oscuro y relajante) */
-    --secondary: #C6F6D5;  /* Verde menta claro (fondo suave) */
-    --light: #FFFFFF;      /* Blanco */
-    --dark: #1A202C;       /* Azul muy oscuro, casi negro */
+    --primary: #2F855A;
+    /* Verde bosque (verde oscuro y relajante) */
+    --secondary: #C6F6D5;
+    /* Verde menta claro (fondo suave) */
+    --light: #FFFFFF;
+    /* Blanco */
+    --dark: #1A202C;
+    /* Azul muy oscuro, casi negro */
 }
 
 h1,
@@ -109,7 +113,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
     }
 }
@@ -220,7 +224,7 @@ h6,
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next{
+.testimonial-carousel .owl-nav .owl-next {
     position: relative;
     margin: 0 5px;
     width: 45px;
@@ -290,11 +294,11 @@ h6,
     width: 3rem;
 }
 
-@media (min-width: 900px){  
+@media (min-width: 900px) {
     .team-item .team-text {
-    left: 0;
-    top: 400px !important;
-}
+        left: 0;
+        top: 400px !important;
+    }
 }
 
 /* ------------------------------ */
@@ -303,11 +307,19 @@ h6,
 } */
 
 #servicios {
-  scroll-margin-top: 100px;
+    scroll-margin-top: 150px;
 }
 
 #cotizacion {
-  scroll-margin-top: 150px;
+    scroll-margin-top: 150px;
+}
+
+#equipo {
+    scroll-margin-top: 150px;
+}
+
+#inicio {
+    scroll-margin-top: 200px;
 }
 
 .a {
@@ -315,10 +327,186 @@ h6,
     color: red;
 }
 
-.tigre {
-    width: 100%;
+.about-btn {
+    background: #1A202C !important;
+    color: white;
+}
+
+.about-fondo {
+    background: #1A202C;
+}
+
+.about-fondo h3 {
+    color: #C6F6D5;
+}
+
+.about-fondo i {
+    color: #1A202C;
+}
+
+.about-titulo {
+    color: #2F855A;
 }
 
 body {
-    background: lightcyan;
+    background: #C6F6D5;
+}
+
+.carrusel-btn-1 {
+    background: var(--secondary);
+    color: black;
+    font-size: 1.5rem;
+}
+
+.carrusel-btn-2 {
+    background: var(--primary);
+    color: black;
+    font-size: 1.5rem;
+}
+
+.cianware {
+    position: relative;
+    left: 0rem;
+    top: .3rem;
+    width: 10rem ;
+}
+
+.cianware:hover {
+    background: crimson;
+}
+
+.features-btn:hover {
+    background: #1A202C;
+    color: white;
+}
+
+.features-icono {
+    background: #1A202C;
+}
+
+.features-imagen {
+    background: #2F855A;
+}
+
+.footer {
+    background: #1A202C;
+}
+
+.footer-telefono {
+    font-size: 1.1rem !important;
+}
+
+.marca {
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+.quote {
+    background-color: #2F855A;
+    color: white;
+}
+
+.quote-btn {
+    background: #1A202C;
+    color: white;
+    height: 3.6rem !important;
+}
+
+.quote-btn:hover {
+    background: var(--secondary);
+    color: #1A202C;
+}
+
+.quote-area {
+    width: 100%;
+}
+
+.quote label {
+    color: #1A202C;
+}
+
+.service-item {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.servicio {
+    background: #2F855A;
+}
+
+.servicios-fondo {
+    background: #C6F6D5;
+    padding-bottom: 2rem;
+}
+
+.telefono-1 {
+    font-size: 3rem;
+}
+
+.telefono-mensaje {
+    font-size: 2rem;
+}
+
+.team-label {
+    background: var(--primary);
+}
+
+.telefono-fondo {
+    background: var(--primary);
+}
+
+.video {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+/* Estilos generales para desktop (>= 992px, lg) */
+@media (min-width: 992px) {
+
+    .cianware {
+    position: relative;
+    left: .5rem;
+    top: -.5rem;
+    width: 10rem;
+}
+
+    .footer-telefono {
+        font-size: 5rem !important;
+    }
+
+    .marca {
+        font-size: 3rem;
+    }
+
+    .menus {
+        position: relative;
+        left: -3rem;
+    }
+
+    .menus-a {
+        font-size: 2rem !important;
+        margin: 1rem;
+    }
+
+    .telefono {
+        position: relative;
+        left: -3rem;
+        width: 110%;
+    }
+
+    .video {
+        width: 100%;
+        height: 590px;
+        object-fit: cover;
+    }
+}
+
+/* Estilos para móviles (<= 991.98px) */
+@media (max-width: 991.98px) {
+
+    .hamburguesa {
+        position: relative;
+        top: -3rem;
+    }
 }
