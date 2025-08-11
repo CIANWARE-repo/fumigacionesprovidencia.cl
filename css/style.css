@@ -447,6 +447,10 @@ body {
     font-size: 1.5rem;
 }
 
+.telefono-telefono {
+    font-size: 2.5rem;
+}
+
 .team-label {
     background: var(--primary);
 }
